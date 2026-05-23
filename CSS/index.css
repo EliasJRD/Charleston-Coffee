@@ -41,7 +41,7 @@
 	max-width: 100%;
 	height: auto;
 	z-index: 0;
-	animation: frijoldivino 1s ease-in-out infinite; 
+	animation: frijoldivino 3s ease-in-out infinite; 
 }
 
 @keyframes frijoldivino {
