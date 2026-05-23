@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlestón Coffee</title>
+    <link rel="icon" type="image/png" href="./IMG/header_footer/Icon.png">
+    <link rel="stylesheet" href="./CSS/general.css">
+    <link rel="stylesheet" href="./CSS/header_footer.css">
+    <link rel="stylesheet" href="./CSS/eventos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Limelight&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="header_footer.html"><img src="./IMG/header_footer/logo.svg" alt="Logo"></a></div>
+            <div class="links">
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="contenedor-titulo">
+            <div class="titulo-decoA tit-uno"></div>
+            <div class="titulo-decoB tit-dos"></div>
+            <div class="titulo-decoB tit-tres"></div>
+            <div class="titulo-decoC tit-cuatro"></div>
+            <div class="titulo-decoC tit-cinco"></div>
+            <h1>Las Noches del Charlestón</h1>
+            <div class="titulo-decoA tit-seis"></div>
+            <div class="titulo-decoB tit-siete"></div>
+            <div class="titulo-decoB tit-ocho"></div>
+            <div class="titulo-decoC tit-nueve"></div>
+            <div class="titulo-decoC tit-diez"></div>
+        </div>
+    </section>
+
+    <section id="cuerpo">
+        <div class="cuadro-deco cua-uno"></div>
+        <div class="line-deco lin-uno"></div>
+        <div class="cuadro-deco cua-dos"></div>
+        <div class="cuadro-deco cua-tres"></div>
+        <div class="line-deco lin-dos"></div>
+        <div class="cuadro-deco cua-cuatro"></div>
+        <div class="line-deco lin-tres"></div>
+        <div class="cuadro-deco cua-cinco"></div>
+        <div class="cuadro-deco cua-seis"></div>
+        <div class="line-deco lin-cuatro"></div>
+        <div class="filtro">
+            <button class="btn-filtro" id="musica-vivo-btn">
+                <div class="btn-deco"></div>
+                <p>Musica en Vivo</p>
+            </button>
+            <button class="btn-filtro" id="noches-baile-btn">
+                <div class="btn-deco"></div>
+                <p>Noches de baile</p>
+            </button>
+            <button class="btn-filtro" id="clases-baile-btn">
+                <div class="btn-deco"></div>
+                <p>Clases de Charlestón</p>
+            </button>
+            <button class="btn-filtro" id="eventos-especiales-btn">
+                <div class="btn-deco"></div>
+                <p>Eventos especiales</p>
+            </button>
+        </div>
+
+        <div class="eventos">
+            <div class="ticket" data-categoria="musica-vivo">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Noche de Big Band</p>
+                        <p class="fecha">22 • MAY • 2026 | 21:00 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>La Gran Orquesta del Norte</h4>
+                        <p>$200 MXN</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="clases-baile">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Clase de Baile</p>
+                        <p class="fecha">28 • MAY • 2026 | 19:30 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>Introducción al Swing con Ana y Leo</h4>
+                        <p>$100 MXN</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="noches-baile">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Electro-Swing</p>
+                        <p class="fecha">30 • MAY • 2026 | 22:00 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>Noche de Speakeasy con DJ Gatsby</h4>
+                        <p>$150 MXN</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="musica-vivo">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Cabaret y Blues</p>
+                        <p class="fecha">04 • JUN • 2026 | 20:00 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>Lola & The Moonlights</h4>
+                        <p>$120 MXN</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="evento-especial">
+                <div class="evento-especial-extensor">
+                    <div class="evento-especial-in">
+                        <div class="evento-especial-imagen"></div>
+                        <div class="evento-especial-informacion">
+                            <h2>Enjambre: Noches de Salón<br>(Set Acústico Exclusivo)</h2>
+                            <p id="evento-especial-fecha">15 • AGO • 2026 | 21:00 H</p>
+                            <p id="evento-especial-dinero">VIP: $800 MXN | General: $500 MXN</p>
+                            <p id="evento-especial-descripcion"> Sus grandes éxitos reimaginados al ritmo de bolero y
+                                danzón.
+                                Una velada íntima y acústica que
+                                revive la magia de los antiguos salones de baile. ¡Prepara tu mejor traje para esta
+                                noche de
+                                "Noches de Salón"! Cupo limitado.</p>
+                            <button class="btn-evento" onclick="window.location.href='contacto.html'">
+                                <h2>Comprar entrada</h2>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="eventos-especiales">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Mañana Acústica</p>
+                        <p class="fecha">06 • JUN • 2026 | 10:00 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>Bossa Nova Brunch</h4>
+                        <p>Libre</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="musica-vivo">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Jazz Clásico en Vivo</p>
+                        <p class="fecha">12 • JUN • 2026 | 21:30 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>Los Sincopados de la Frontera</h4>
+                        <p>$180 MXN</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="eventos-especiales">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Experiencia Cafetalera</p>
+                        <p class="fecha">17 • JUN • 2026 | 18:00 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>Cata de Especialidad: Granos y Jazz</h4>
+                        <p>$350 MXN</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="eventos-especiales">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Competencia</p>
+                        <p class="fecha">20 • JUN • 2026 | 20:00 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>Primer Torneo de Charlestón</h4>
+                        <p>$250 MXN</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="musica-vivo">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Piano Bar</p>
+                        <p class="fecha">25 • JUN • 2026 | 20:00 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>El Piano de Cristal: Tributo a los 20s</h4>
+                        <p>Libre</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="musica-vivo">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Jazz Local</p>
+                        <p class="fecha">03 • JUL • 2026 | 21:00 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>Trío Medianoche</h4>
+                        <p>$100 MXN</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="eventos-especiales">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Show de Tap</p>
+                        <p class="fecha">11 • JUL • 2026 | 19:00 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>Tap, Café y Expresión</h4>
+                        <p>$150 MXN</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ticket" data-categoria="eventos-especiales">
+                <div class="ticket-interior">
+                    <div class="ticket-interior-A">
+                        <p>Evento Temático</p>
+                        <p class="fecha">18 • JUL • 2026 | 22:00 H</p>
+                    </div>
+                    <div class="ticket-interior-B">
+                        <h4>Fiesta Temática: Los Dorados 20s</h4>
+                        <p>$250 MXN</p>
+                    </div>
+                    <a href="contacto.html">
+                        <div class="ticket-interior-C">
+                            <h4>Comprar entrada</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="reglas">
+            <div class="reglas-line reg-lineA"></div>
+            <div class="reglasA">
+                <div class="reglas-decoD reg-cuatro"></div>
+                <div class="reglas-decoC reg-cinco"></div>
+                <div class="reglas-decoD reg-seis"></div>
+                <h3>Codigo de vestimenta</h3>
+                <div class="reglas-img">
+                    <img src="./IMG/eventos/deco.svg" alt="Deco">
+                    <img src="./IMG/eventos/zapato_icon.svg" alt="Codigo de Vestimenta Deco" width="100">
+                    <img src="./IMG/eventos/deco.svg" alt="Deco">
+                </div>
+                <p>Ven con ganas de disfrutar y moverte. Te sugerimos zapatos cómodos para dominar la pista de baile.
+                    Aunque no exigimos un código estricto, ¡los toques vintage y los atuendos inspirados en los años 20
+                    siempre son celebrados en nuestra casa!</p>
+            </div>
+            <div class="reglasB">
+                <div class="reglas-decoB reg-uno"></div>
+                <div class="reglas-decoA reg-dos"></div>
+                <div class="reglas-decoB reg-tres"></div>
+                <h2>Antes de tu<br>visita</h2>
+                <h3>Reservas y llegadas</h3>
+                <div class="reglas-img">
+                    <img src="./IMG/eventos/deco.svg" alt="Deco">
+                    <img src="./IMG/eventos/ticket_icon.svg" alt="Reservas y llegadas Deco" width="100">
+                    <img src="./IMG/eventos/deco.svg" alt="Deco">
+                </div>
+                <p>Ven con ganas de disfrutar y moverte. Te sugerimos zapatos cómodos para dominar la pista de baile.
+                    Aunque no exigimos un código estricto, ¡los toques vintage y los atuendos inspirados en los años 20
+                    siempre son celebrados en nuestra casa!</p>
+            </div>
+            <div class="reglasC">
+                <div class="reglas-decoD reg-cuatro"></div>
+                <div class="reglas-decoC reg-cinco"></div>
+                <div class="reglas-decoD reg-seis"></div>
+                <h3>Ubicacion y accesos</h3>
+                <div class="reglas-img">
+                    <img src="./IMG/eventos/deco.svg" alt="Deco">
+                    <img src="./IMG/eventos/map_icon.svg" alt="Ubicacion y accesos Deco" width="100">
+                    <img src="./IMG/eventos/deco.svg" alt="Deco">
+                </div>
+                <p>Ven con ganas de disfrutar y moverte. Te sugerimos zapatos cómodos para dominar la pista de baile.
+                    Aunque no exigimos un código estricto, ¡los toques vintage y los atuendos inspirados en los años 20
+                    siempre son celebrados en nuestra casa!</p>
+            </div>
+            <div class="reglas-line reg-lineB"></div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./IMG/header_footer/decor_footer.svg" alt="decor_footer" class="decor-footer">
+        <div class="footer-info">
+            <div class="columnas">
+                <div class="derechos">
+                    <div class="elementos">
+                        <a href="./index.html"><img src="./IMG/header_footer/logo.svg" alt="Logo"
+                                class="logo-footer"></a>
+                    </div>
+                    <small class="elementos">© 2026 Charleston Coffee. Todos los derechos reservados.</small>
+                </div>
+
+            </div>
+            <div class="columnas">
+                <div class="location">
+                    <img src="./IMG/header_footer/location.svg" alt="location" class=" redes elementos">
+                    <p class="elementos">C. Miguel de Cervantes 530<br>32417 Juárez, Chih.</p>
+                </div>
+
+            </div>
+            <div class="columnas">
+                <div class="redes">
+                    <div class="elementos red-social">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./IMG/header_footer/instagram.svg" alt="Instagram">
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                    <div class="elementos red-social">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./IMG/header_footer/facebook.svg" alt="Facebook">
+                            <p>Facebook</p>
+                        </a>
+                    </div>
+                    <div class="elementos red-social">
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <img src="./IMG/header_footer/tiktok.svg" alt="Tiktok">
+                            <p>Tiktok</p>
+                        </a>
+                    </div>
+                    <div class="elementos red-social">
+                        <img src="./IMG/header_footer/telefono.svg" alt="Telefono">
+                        <p>+52 656 302 4823</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columnas">
+                <div class="enlaces">
+                    <a href="index.html" class="elementos enlace">Inicio</a>
+                    <a href="menu.html" class="elementos enlace">Menú</a>
+                    <a href="eventos.html" class="elementos enlace">Eventos</a>
+                    <a href="galeria.html" class="elementos enlace">Galería</a>
+                    <a href="contacto.html" class="elementos enlace">Contacto</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="./JS/eventos.js"></script>
+</body>
+
+</html>

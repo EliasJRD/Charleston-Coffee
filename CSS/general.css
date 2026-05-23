@@ -1,0 +1,36 @@
+*{
+    color: #181818;
+    font-family: "Afacad", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: "Limelight", sans-serif;
+    font-size: 96px;
+    font-weight: normal;
+    color: #f3eddf;
+    text-align: center;
+}
+h2{
+    font-family: "Limelight", sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    color: #3b2b0a;
+    text-align: center;
+}
+h3{
+    font-family: "Limelight", sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #3b2b0a;
+    text-align: center;
+}
+h4{
+    font-family: "Limelight", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: #f3eddf;
+    text-align: center;
+}

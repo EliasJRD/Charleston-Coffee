@@ -1,0 +1,171 @@
+* {
+    font-family: "Afacad", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Afacad", sans-serif;
+    background-color: #f3eddf;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: 444px;
+    background-color: #181818;
+    color: #f3eddf;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../IMG/galeria/Banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+
+    filter: brightness(0.5);
+    z-index: 0;
+    transition: .8s;
+}
+
+.hero:hover::before {
+    filter: brightness(.8);
+    transition: 3s;
+}
+
+.texto-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    width: 100%;
+}
+
+.texto-banner h1 {
+    font-size: 60px;
+    font-family: "Limelight", sans-serif;
+    margin-bottom: 20px;
+}
+
+.texto-banner h2 {
+    font-size: 40px;
+    font-family: "Limelight", sans-serif;
+}
+
+
+.contenido {
+    background-color: #f3eddf;
+    padding: 40px;
+}
+
+.galeria {
+    background-color: #f3eddf;
+    padding: 40px;
+}
+
+.lineas-arriba {
+    width: 100%;
+    display: block;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+
+.texto-historia {
+    width: 400px;
+}
+
+.texto-historia h2 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -80px;
+    margin-left: 70px;
+    font-family: "Limelight", sans-serif;
+}
+
+.texto-historia p {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+    margin-top: 25px;
+}
+
+.imagen-historia img {
+    width: 600px;
+    transition: .3s ease-in-out;
+}
+
+.imagen-historia img:hover{
+    filter: brightness(1.4);
+    scale: 1.02;
+}
+
+.lineas-abajo {
+    width: 100%;
+    display: block;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.galeria img{
+    transition: .3s ease-in-out;
+}
+
+.galeria img:hover{
+    filter: brightness(1.4);
+    scale: 1.02;
+}
+
+.izquierda img {
+    width: 700px;
+    display: block;
+}
+
+.abajo {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.abajo img {
+    width: 300px;
+}
+
+.derecha img {
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer p {
+    margin-bottom: 0 !important; 
+}

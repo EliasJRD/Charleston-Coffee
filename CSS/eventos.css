@@ -1,0 +1,697 @@
+#hero {
+    width: auto;
+    height: 320px;
+    background-color: #181818;
+    position: relative;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../IMG/eventos/heroEventos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 80%;
+
+    filter: brightness(0.3);
+    z-index: 0;
+    transition: .8s;
+}
+
+#hero:hover::before {
+    filter: brightness(.8);
+    transition: 3s;
+}
+
+/*TITULO*/
+.contenedor-titulo {
+    width: 920px;
+    height: 230px;
+    background-color: #181818;
+    border: solid 1px #A97C1C;
+
+    position: relative;
+    margin: 0 auto;
+    top: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-decoA {
+    height: 60px;
+    width: 60px;
+    border: solid 1px #A97C1C;
+    position: absolute;
+    rotate: 45deg;
+}
+
+.titulo-decoB {
+    height: 40px;
+    width: 40px;
+    border: solid 1px #A97C1C;
+    position: absolute;
+    rotate: 45deg;
+}
+
+.titulo-decoC {
+    height: 30px;
+    width: 30px;
+    border: solid 1px #A97C1C;
+    position: absolute;
+    rotate: 45deg;
+}
+
+.tit-uno {
+    left: -30px;
+    top: -30px;
+}
+
+.tit-dos {
+    top: 16px;
+    left: -20px;
+}
+
+.tit-tres {
+    top: -20px;
+    left: 16px;
+}
+
+.tit-cuatro {
+    top: 52px;
+    left: -15px;
+}
+
+.tit-cinco {
+    top: -15px;
+    left: 52px;
+}
+
+.tit-seis {
+    right: -30px;
+    top: -30px;
+}
+
+.tit-siete {
+    top: 16px;
+    right: -20px;
+}
+
+.tit-ocho {
+    top: -20px;
+    right: 16px;
+}
+
+.tit-nueve {
+    top: 52px;
+    right: -15px;
+}
+
+.tit-diez {
+    top: -15px;
+    right: 52px;
+}
+
+/*-------*/
+
+#cuerpo {
+    width: 1366px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 305px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/*DECORACION DE FONDO*/
+.cuadro-deco {
+    height: 323px;
+    width: 323px;
+    border: solid 1px #A97C1C;
+    position: absolute;
+    z-index: -1;
+    rotate: 45deg;
+}
+
+.line-deco {
+    height: 100%;
+    width: 1px;
+    background-color: #A97C1C;
+    position: absolute;
+    z-index: -1;
+}
+
+/*COORDENADAS DECO*/
+.cua-uno {
+    left: -161.5px;
+    top: -161.5px;
+}
+
+.lin-uno {
+    left: 0;
+    top: 228px;
+}
+
+.cua-dos {
+    left: 58px;
+    top: -161.5px;
+}
+
+.cua-tres {
+    left: 293.8px;
+    top: -161.5px;
+}
+
+.lin-dos {
+    left: 455.3px;
+    top: 228px;
+}
+
+.cua-cuatro {
+    right: -161.5px;
+    top: -161.5px;
+}
+
+.lin-tres {
+    right: 0;
+    top: 228px;
+}
+
+.cua-cinco {
+    right: 58px;
+    top: -161.5px;
+}
+
+.cua-seis {
+    right: 293.8px;
+    top: -161.5px;
+}
+
+.lin-cuatro {
+    right: 455.3px;
+    top: 228px;
+}
+
+/*--------------------------*/
+
+/*FILTRO*/
+.filtro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 82px;
+}
+
+.btn-filtro {
+    width: 280px;
+    height: 50px;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #A97C1C;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-filtro p {
+    font-size: 24px;
+    text-align: center;
+    color: #f3eddf;
+}
+
+.btn-deco {
+    width: 80px;
+    height: 80px;
+    border: solid 1px #181818;
+    position: absolute;
+    z-index: -1;
+    rotate: 45deg;
+    transition: .3s ease-in-out;
+}
+
+.btn-filtro::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0px;
+    background-color: #A97C1C;
+    transition: .3s ease-in-out;
+    rotate: 45deg;
+    z-index: -1;
+}
+
+.btn-filtro::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0px;
+    background-color: #A97C1C;
+    transition: .3s ease-in-out;
+    rotate: 135deg;
+    z-index: -1;
+}
+
+/*hovers*/
+.btn-filtro:hover, .activo {
+    background-color: #A97C1C;
+}
+
+.btn-filtro:hover::after, .activo::after {
+    width: 160px;
+}
+
+.btn-filtro:hover::before, .activo::before {
+    width: 160px;
+}
+
+.btn-filtro:hover .btn-deco, .activo .btn-deco {
+    border: solid 1px #A97C1C;
+}
+
+/*--------------------------*/
+
+.oculto {
+    display: none !important;
+}
+
+/*EVENTOS*/
+.eventos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.ticket {
+    height: 480px;
+    width: 280px;
+    background-color: #181818;
+
+    -webkit-mask:
+        radial-gradient(ellipse 100px 90px at center calc(0% - 62px), transparent 99%, black 100%) top,
+        radial-gradient(ellipse 100px 90px at center calc(100% + 62px), transparent 99%, black 100%) bottom;
+    -webkit-mask-size: 100% 50%;
+    -webkit-mask-repeat: no-repeat;
+    mask:
+        radial-gradient(ellipse 100px 90px at center calc(0% - 62px), transparent 99%, black 100%) top,
+        radial-gradient(ellipse 100px 90px at center calc(100% + 62px), transparent 99%, black 100%) bottom;
+    mask-size: 100% 50%;
+    mask-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+
+.ticket:hover {
+    scale: 1.04;
+}
+
+.ticket-interior {
+    height: 380px;
+    width: 200px;
+    border: solid 1px #f3eddf;
+}
+
+.ticket-interior-A {
+    height: 98px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 0;
+}
+
+.ticket-interior-A p {
+    color: #f3eddf;
+    text-align: center;
+}
+
+.ticket-interior-A .fecha {
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.ticket-interior-B {
+    height: 190px;
+    width: 100%;
+    border-top: dashed 1px #f3eddf;
+    border-bottom: dashed 1px #f3eddf;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ticket-interior-B p {
+    color: #f3eddf;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+.ticket-interior-C {
+    height: 92px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.ticket-interior-C h4 {
+    margin: 0 auto;
+    font-size: 20px;
+    width: 120px;
+}
+
+.ticket-interior-C:hover {
+    background-color: #f3eddf;
+}
+
+.ticket-interior-C:hover h4 {
+    color: #181818;
+}
+
+/*evento especial*/
+.evento-especial {
+    height: 480px;
+    width: 100%;
+    position: relative;
+}
+
+.evento-especial-extensor {
+    height: 480px;
+    width: 100vw;
+    background-color: #181818;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.evento-especial-in {
+    margin: 0 auto;
+    width: 1366px;
+    display: flex;
+}
+
+.evento-especial-imagen {
+    height: 480px;
+    width: 595px;
+    background-image: linear-gradient(90deg, #181818 0%, #18181800 50%, #181818 100%), url('../IMG/eventos/enjambre.jpg');
+    transition: 1s;
+    position: relative;
+    z-index: -1;
+}
+
+.evento-especial:hover .evento-especial-imagen {
+    scale: 1.1;
+    transition: 4s;
+}
+
+.evento-especial h2:not(.btn-evento h2) {
+    color: #f3eddf;
+    margin-top: 48px;
+    text-align: left;
+}
+
+.evento-especial p {
+    color: #f3eddf;
+    font-size: 24px;
+}
+
+#evento-especial-fecha,
+#evento-especial-dinero {
+    display: inline-block;
+}
+
+#evento-especial-dinero {
+    margin-left: 72px;
+}
+
+#evento-especial-descripcion {
+    width: 750px;
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+
+.btn-evento {
+    width: 520px;
+    height: 70px;
+    background-color: #A97C1C;
+    transition: .3s ease-in-out;
+    border: 0;
+    cursor: pointer;
+    margin-left: 78px;
+}
+
+.btn-evento h2 {
+    color: #f3eddf;
+}
+
+.btn-evento:hover {
+    background-color: #1F3671;
+    scale: 1.04;
+}
+
+/*-------------------------*/
+
+/*REGLAS*/
+.reglas {
+    height: 660px;
+    width: 1366px;
+    margin-left: -32px;
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+}
+
+.reglas p {
+    width: 305px;
+    text-align: center;
+}
+
+.reglasA {
+    padding-top: 230px;
+    width: 456px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.reglasA::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #181818;
+    transition: transform .3s ease-in-out;
+    transform: translateY(100%);
+    z-index: -1;
+}
+
+.reglasA:hover::before {
+    transform: translateY(0);
+}
+
+.reglasA h3,
+.reglasA p {
+    transition: .3s ease-in-out;
+}
+
+.reglasA:hover h3,
+.reglasA:hover p {
+    color: #f3eddf;
+}
+
+.reglasB {
+    width: 454px;
+    padding-top: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+}
+
+.reglasB h2 {
+    width: 454px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.reglasB::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #181818;
+    transition: transform .3s ease-in-out;
+    transform: translateY(100%);
+    z-index: -1;
+}
+
+.reglasB:hover::before {
+    transform: translateY(0);
+}
+.reglasB h2,
+.reglasB h3,
+.reglasB p {
+    transition: .3s ease-in-out;
+}
+
+.reglasB:hover h2,
+.reglasB:hover h3,
+.reglasB:hover p {
+    color: #f3eddf;
+}
+
+.reglasC {
+    padding-top: 230px;
+    width: 456px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.reglasC::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #181818;
+    transition: transform .3s ease-in-out;
+    transform: translateY(100%);
+    z-index: -1;
+}
+
+.reglasC:hover::before {
+    transform: translateY(0);
+}
+
+.reglasC h3,
+.reglasC p {
+    transition: .3s ease-in-out;
+}
+
+.reglasC:hover h3,
+.reglasC:hover p {
+    color: #f3eddf;
+}
+
+.reglas-img {
+    margin: 22px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/*mid deco*/
+.reglas-decoA {
+    width: 112px;
+    height: 112px;
+    border: solid 1px #A97C1C;
+    position: absolute;
+    rotate: 45deg;
+    z-index: 0;
+}
+
+.reglas-decoB {
+    width: 128px;
+    height: 128px;
+    border: solid 1px #A97C1C;
+    position: absolute;
+    rotate: 45deg;
+    z-index: 0;
+}
+
+.reg-uno {
+    top: 76px;
+    left: 72px;
+}
+
+.reg-dos {
+    top: 84px;
+    left: calc(50% - 52px);
+}
+
+.reg-tres {
+    top: 76px;
+    right: 72px;
+}
+
+/*sides deco*/
+.reglas-decoC {
+    width: 94px;
+    height: 94px;
+    border: solid 1px #A97C1C;
+    position: absolute;
+    rotate: 45deg;
+    z-index: 0;
+}
+
+.reglas-decoD {
+    width: 60px;
+    height: 60px;
+    border: solid 1px #A97C1C;
+    position: absolute;
+    rotate: 45deg;
+    z-index: 0;
+}
+
+.reg-cuatro {
+    top: 110px;
+    left: 131px;
+}
+
+.reg-cinco {
+    top: 93px;
+    left: calc(50% - 47px);
+}
+
+.reg-seis {
+    top: 110px;
+    right: 131px;
+}
+
+.reglas-line {
+    width: 503px;
+    height: 1px;
+    background-color: #A97C1C;
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+}
+
+.reg-lineA {
+    left: 0;
+}
+
+.reg-lineB {
+    right: 0;
+}
